@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Домашнее задание №6</title>
+  </head>
+  <body>
+    <ul id="list">
+      <li>Element 1</li>
+      <li>Element 2</li>
+      <li style="color: green">Element 3</li>
+      <li style="color: green">Element 4</li>
+      <li>Element 5</li>
+      <li style="color: green">Element 6</li>
+      <li style="color: green">Element 7</li>
+      <li style="color: green">Element 8</li>
+      <li>Element 9</li>
+      <li style="color: green">Element 10</li>
+    </ul>
+
+  <script type="text/javascript">
+  var elems = document.querySelectorAll('#list>li');
+
+  for (var i=0; i<elems.length; i++) {
+    var item = elems[i],
+        content = item.innerHTML;
+    if (item.matches('[style="color: green"]')) {
+      item.innerHTML = '<span>'+item.innerText+'</span>';
+      console.log(item);
+    } else {
+      item.innerHTML = '<p>'+item.innerText+'</p>';
+      console.log(item);
+    }
+};
+  </script>
+  </body>
+</html>

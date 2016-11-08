@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>QUnit tester</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.0.1.css">
+    <script src="https://code.jquery.com/qunit/qunit-2.0.1.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-2.x-git.js"></script>
+
+
+</head>
+<body>
+
+    <iframe height="100" id="myFrame"></iframe>
+
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script type="text/javascript">
+    $('#myFrame').load(function () {
+        $ = jQuery = window.frames[0].jQuery;
+
+    });
+
+
+    function page2tests() {
+        module("Page ajax tests");
+
+        test('Make sure ajax call works - when we click button', function() {
+            ok($('[data-id="button"]').text(123) === 'Ajax response goes here', 'Text correct before ajax call');
+
+            $('[data-id="button"').click();
+
+            ok($('[data-id="button"').text(123) === 'It worked!', 'Text correct after ajax call');
+
+            //go to page 3
+            $('#myFrame').attr('src', location.protocol + '//' + location.hostname + '/examples/qunit/page3.html');
+        });
+    }
+
+
+
+    //load up a SOP friendly URL
+    $('#myFrame').attr('src', 'index.html');
+
+</script>
+</body>
+</html>

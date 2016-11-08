@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery Game</title>
+    <script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+    <script type="text/javascript">
+
+    var arrIndex = new Array();
+
+    function boxClick(obj) {
+        if ($(obj).hasClass("green")) {
+            var clickedindex = parseInt($(obj).attr("id"));
+                $(obj).removeClass("uncliked green");
+                $(obj).addClass("clicked");
+                arrIndex[tempindex] = clickedindex;
+                tempindex++;
+
+                    if (true) {
+                        $("#nextsum").html("Thanks For Playing!");
+                    }
+
+        }
+
+    }
+
+    function table() {
+
+        tempindex = 0;
+        var val          = parseInt($("#cbdim").val());
+        var val1         = parseInt($("#cbdim1").val());
+        boxloop      = val * val1;
+        var boxleft      = ($(window).width() - (val * 78)) / 2;
+        $("#dimcontainer").html('<div id="boxclear"></div>');
+        $("#dimcontainer").css({
+            width: (val * 78) + "px",
+            left: boxleft + "px"
+        });
+
+        for ( var i = 0; i < boxloop; i++) {
+            $('#boxclear').before('<div class="boxnum uncliked" id='+i+' '+
+                ' onclick="boxClick(this);"></div>');
+        }
+
+    }
+
+    function start() {
+
+        $.fn.random = function(from, to) {
+            return this.eq(Math.floor(Math.random() * (to - from + 1) + from));
+        };
+        if ($("#dimcontainer div").hasClass("uncliked")){
+            setInterval(function() {
+                $("#dimcontainer div ").random(0,boxloop).addClass("green");
+            }, 700);
+        }
+
+
+    }
+
+    </script>
+    
+    <style type="text/css">
+        * {
+              font-family: Arial;
+          }
+
+        #container {
+            margin: 0 auto;
+            text-align: center;
+        }
+        #dimcontainer {
+            padding: 2px;
+            margin: 0 auto;
+            left: 500px;
+        }
+        .boxnum {
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid #e3e3e3;
+            background: #fff;
+            width: 70px;
+            height: 70px;
+            margin: 2px;
+            float: left;
+            color: #D80000;
+            -webkit-border-radius: .3em;
+            -moz-border-radius: .3em;
+            border-radius: .3em;
+        }
+        .boxnum:hover {
+            background: #e3e3e3;
+        }
+        .boxnum p {
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: -1px 1px 1px #fff;
+        }
+        .clicked {
+            background: #ff0000;
+            border-color: #ff0000;
+        }
+        .green {
+            background: #00ff00;
+            border-color: #00ff00;
+        }
+        #boxclear {
+            clear: both;
+        }
+        #pnext {
+            font-size: 18px;
+        }
+        #nextsum { 
+            font-weight: bold;
+            font-size: 30px;
+            position: relative;
+            top: 3px;
+        }
+        #pick {
+            font-size: 18px;
+            float: right;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="pick">
+            <p>Table:</p>
+            <p>Width:<input type="number" id="cbdim" ></p>
+            <p>Height:<input type="number" id="cbdim1" ></p>
+            <button id="btnstart" onclick="table();">Table Create</button>
+            <div id="speed">Speed:<select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p><button id="btnGameStart" onclick="start();">Start Game</button></p>
+            </div>
+        </div>
+        <p id="pnext">Total: &nbsp;<span id="nextsum">0</span></p>
+
+        <div id="dimcontainer">
+            <div id="boxclear" style="clear:both"></div>
+        </div>
+    </div>
+</body>
+</html>

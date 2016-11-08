@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>14.09</title>
+  </head>
+
+  <body>
+  <p id="demo"></p>
+  <p><span id="id">ID</span><span id="name">NAME</span><span id="age">AGE</span></p>
+  <p>12	John 32</p>
+  <p>54	Melissa	25</p>
+  <p>65	Eric 33</p>
+  <p>123 Michael	17</p>
+  <script type="text/javascript">
+
+    var john = { name: "john", age: 34, id: 12 };
+    var melissa = { name: "melissa", age: 25, id: 54 };
+    var eric = { name: "eric", age: 33, id: 65 };
+    var michael = { name: "michael", age: 17, id: 123 };
+
+    var people = [ john , melissa , eric, michael ];
+
+    function compareAge(personA, personB) {
+      return personB.age - personA.age;
+    }
+    function compareId(personA, personB) {
+      return personB.id - personA.id;
+    }
+    function compareName(personA, personB) {
+      return personB.name - personA.name;
+    }
+
+
+
+    document.getElementById("id").onclick = function () {
+      people.sort(compareId);
+      for(var i = 0; i < people.length; i++) {
+        console.log (people[i].id + people[i].name + people[i].age);}
+      }
+    document.getElementById("name").onclick = function () {
+      people.sort(compareName);
+      for(var i = 0; i < people.length; i++) {
+        console.log (people[i].id + people[i].name + people[i].age);}
+    }
+    document.getElementById("age").onclick = function () {
+      people.sort(compareAge);
+      for(var i = 0; i < people.length; i++) {
+        console.log (people[i].id + people[i].name + people[i].age);}
+    }
+
+
+  </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>14.09</title>
+  </head>
+  <script type="text/javascript">
+
+
+    var calculator = {
+      sum: function() {
+        return this.a + this.b;
+      },
+
+      mul: function() {
+        return this.a * this.b;
+      },
+      div: function() {
+        return this.a / this.b;
+      },
+
+      min: function() {
+        return this.a - this.b;
+      },
+
+      readValues: function() {
+        this.a = +prompt('a?', 0);
+        this.b = +prompt('b?', 0);
+        return  prompt('+, -, /, *');
+      }
+    }
+
+switch (calculator.readValues()) {
+  case '+':
+    result = calculator.sum();
+    break;
+  case '-':
+    result = calculator.min();
+    break;
+  case '*':
+    result = calculator.mul();
+    break;
+  case '/':
+    result = calculator.div();
+    break;
+  default:
+    result = "Ошибка, повторите ввод";
+}
+alert(result);
+
+
+  </script>
+  <body>
+
+  </body>
+</html>
