@@ -8,16 +8,16 @@
   <body>
   <p id="demo"></p>
   <p><span id="id">ID</span><span id="name">NAME</span><span id="age">AGE</span></p>
-  <p>12	John 32</p>
+  <div id="inner"><p>12	John 32</p>
   <p>54	Melissa	25</p>
   <p>65	Eric 33</p>
-  <p>123 Michael	17</p>
+  <p>123 Michael 17</p></div>
   <script type="text/javascript">
-
-    var john = { name: "john", age: 34, id: 12 };
-    var melissa = { name: "melissa", age: 25, id: 54 };
-    var eric = { name: "eric", age: 33, id: 65 };
-    var michael = { name: "michael", age: 17, id: 123 };
+    var inner =  document.getElementById("inner");
+    var john = { name: "John", age: 34, id: 12 };
+    var melissa = { name: "Melissa", age: 25, id: 54 };
+    var eric = { name: "Eric", age: 33, id: 65 };
+    var michael = { name: "Michael", age: 17, id: 123 };
 
     var people = [ john , melissa , eric, michael ];
 
@@ -28,28 +28,36 @@
       return personB.id - personA.id;
     }
     function compareName(personA, personB) {
-      return personB.name - personA.name;
+      if (personB.name < personA.name) return -1;
+      if (personB.name > personA.name) return 1;
+      return 0;
+
     }
 
 
 
     document.getElementById("id").onclick = function () {
+      inner.innerHTML = '';
       people.sort(compareId);
       for(var i = 0; i < people.length; i++) {
-        console.log (people[i].id + people[i].name + people[i].age);}
-      }
+        inner.innerHTML += '<p>' + people[i].id  + people[i].name + people[i].age + '</p>' ;}
+      };
+
+
     document.getElementById("name").onclick = function () {
+      inner.innerHTML = '';
       people.sort(compareName);
       for(var i = 0; i < people.length; i++) {
-        console.log (people[i].id + people[i].name + people[i].age);}
-    }
+        inner.innerHTML += '<p>' + people[i].id  + people[i].name + people[i].age + '</p>' ;}
+    };
     document.getElementById("age").onclick = function () {
+      inner.innerHTML = '';
       people.sort(compareAge);
       for(var i = 0; i < people.length; i++) {
-        console.log (people[i].id + people[i].name + people[i].age);}
-    }
+        inner.innerHTML += '<p>' + people[i].id  + people[i].name + people[i].age + '</p>' ;}
+    };
 
-
+document.getElementsByClassName("inner").innerHTML
   </script>
   </body>
 </html>
