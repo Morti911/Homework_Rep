@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнее задание №18 от 08.11.2016</title>
+</head>
+<body>
+    <script>
+
+
+        function Components() {
+            this.switch = 'active';
+            this.active = function () {
+                this.switch = 'active';
+            };
+            this.disabled = function () {
+                this.switch = 'disabled';
+            };
+        };
+
+        function Form() {
+
+            Components.apply(this, arguments);
+
+
+                this.validate = function () {
+                    if (this.switch === "active") {
+                        console.log('Validated!');
+                    } else {
+                        console.log('Validated Disabled!');
+                    }
+                };
+
+                this.send = function () {
+                    if (this.switch === 'active') {
+                        console.log('Sended!');
+                    } else {
+                        console.log('Send Disabled!');
+                    }
+                };
+
+            var changedActive = this.active;
+
+            this.active = function () {
+                changedActive.call(this);
+                this.validate();
+            };
+
+            this.getValue = function () {
+                console.log(this.switch);
+            };
+
+            this.setValue = function (value) {
+                if (value === "active" || value === "disable") {
+                    this.switch = value;
+                } else {
+                    console.log("Error");
+
+                }
+            };
+
+
+
+        }
+
+        var newForm = new Form();
+
+        console.log(newForm);
+
+    </script>
+</body>
+</html>
