@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/app.js" defer></script>
+    <style>
+
+        #container{
+            float: left;
+            width: 100%;
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+        #textarea {
+            float: left;
+            width: 500px;
+            min-height: 250px;
+            resize: none;
+            -webkit-user-modify: read-write;
+            padding: 20px 0 0 20px;
+            border: 1px solid black;
+        }
+        button, input {
+
+            width: 160px;
+            height: 40px;
+            margin: 0 0 20px 30px;
+            font-size: 12px;
+            text-align: center;
+        }
+        span {
+          text-transform: uppercase;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="textarea"></div>
+    <input type="text" placeholder="Текст для поиска">
+    <p><button id="search1">Простой поиск</button></p>
+    <p><button id="search2">Сложный поиск</button></p>
+    <p><button id="replace">Автозамена</button></p>
+</div>
+</body>
+</html>
