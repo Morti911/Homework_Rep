@@ -1,0 +1,15 @@
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+ng-view {
+    margin: 20px 0;
+    width: 100%;
+    float: left;
+}
+.alert {
+    margin: 20px 0;
+}
+#inputSearch{
+    margin: 20px;
+}

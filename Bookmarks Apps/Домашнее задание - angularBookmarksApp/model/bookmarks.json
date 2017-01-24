@@ -1,0 +1,27 @@
+{"bookmarks":[{"id":1123123123453,"name":"Google","url":"google.com.ua","description":"Worldwide search","tags": [{"id": "ab6524df000001", "name": "search", "color": "#ff4433"}]},
+  {"id":2234234253223,"name":"Facebook","url":"facebook.com","description":"Social network",
+    "tags": [{"id": "ab6524df000002", "name": "social network", "color": "#11ccdd"}]},
+  {"id":3234234212333,"name":"Angular","url":"angularjs.com","description":"Superheroic JavaScript MVW Framework",
+    "tags": [
+      {"id": "ab6524df000004", "name": "DeveloperTools", "color": "#aaff66"}]},
+  {"id":1123121243213,"name":"Yahoo","url":"google.com.ua","description":"Worldwide search","tags": [{"id": "ab6524df000001", "name": "search", "color": "#ff4433"}]},
+  {"id":2123123243213,"name":"Google+","url":"plus.google.com","description":"Social network",
+    "tags": [{"id": "ab6524df000002", "name": "social network", "color": "#11ccdd"}]},
+  {"id":3123123112313,"name":"Jquery","url":"angularjs.com","description":"JS library",
+    "tags": [
+      {"id": "ab6524df000004", "name": "DeveloperTools", "color": "#aaff66"}]},
+  {"id":1123123112313,"name":"Bind","url":"google.com.ua","description":"Worldwide search","tags": [{"id": "ab6524df000001", "name": "search", "color": "#ff4433"}]},
+  {"id":2123123132153,"name":"instagram","url":"instagram.com","description":"Social network",
+    "tags": [{"id": "ab6524df000002", "name": "social network", "color": "#11ccdd"}]},
+  {"id":3123131342133,"name":"Angular","url":"angularjs.com","description":"Angular framework",
+    "tags": [
+      {"id": "ab6524df000004", "name": "DeveloperTools", "color": "#aaff66"}]},
+  {"id":1123123134533,"name":"Yandex","url":"google.com.ua","description":"Worldwide search","tags": [{"id": "ab6524df000001", "name": "search", "color": "#ff4433"}]},
+  {"id":2453434334534,"name":"Facebook","url":"facebook.com","description":"Social network",
+    "tags": [{"id": "ab6524df000002", "name": "social network", "color": "#11ccdd"}]},
+  {"id":3456456434525,"name":"Angular","url":"angularjs.com","description":"Angular framework",
+    "tags": [
+      {"id": "ab6524df000004", "name": "DeveloperTools", "color": "#aaff66"}]},
+  {"id":1484995171656,"name":"React","url":"react.com","description":"JavaScript library for building user interfaces",
+    "tags": [
+      {"id": "ab6524df000004", "name": "DeveloperTools", "color": "#aaff66"}]}]}

@@ -1,0 +1,40 @@
+<div id="bookmarksList" ng-controller="bookmarksListCtrl">
+
+    <form class="form-horizontal" >
+            <div class="col-sm-4">
+                <label for="inputSearch">Search bookmarks from list</label>
+                <input autofocus type="text" class="form-control" id="inputSearch" placeholder="Enter Id, Name, Url, Description or Tag" ng-model="search">
+        </div>
+    </form>
+
+<table class="table">
+    <thead >
+    <tr ng-class="headerClass">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Url</th>
+        <th>Description</th>
+        <th> Tags</th>
+        <th>Action</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="bookmark in list.bookmarks | filter:search" ng-class-even="tableRowClass" ng-mouseenter="tableRowHover($event)" ng-mouseleave="tableRowHover($event)" ng-class="tableRowHoverClass">
+        <td>{{bookmark.id}}</td>
+        <td>{{bookmark.name}}</td>
+        <td>{{bookmark.url | httpFilter }}</td>
+        <td>{{bookmark.description}}</td>
+        <td><ul class="list-inline bookmark">
+            <li ng-repeat="tag in bookmark.tags">
+                <display-tag tag="tag"  ></display-tag>
+            </li>
+        </ul>
+        </td>
+        <td><button class="btn btn-danger" ng-click="deleteBookmark(bookmark.id)">Delete</button></td>
+
+    </tr>
+    </tbody>
+
+</table>
+</div>

@@ -1,0 +1,18 @@
+<div id="addForm" ng-controller="addFormCtrl">
+    <h2><span class="glyphicon glyphicon-floppy-save"></span> Add Bookmark</h2>
+    <form class="navbar navbar-form" name="addForm">
+        <div class="form-group">
+            <input type="text" class="form-control" required placeholder="Name" ng-model="newBookmark.name" ng-pattern="/^[A-Z,a-z]/">
+            <input type="text" class="form-control" required placeholder="Url" ng-model="newBookmark.url">
+            <input type="text" class="form-control" required placeholder="Description" ng-model="newBookmark.description">
+            <span ng-controller="addTagCtrl">
+                  <select  class="form-control"  ng-model="newBookmark.tag" ng-options="tag.name as tag.name for tag in tags" > <option value="" disabled selected>Add Tags</option></select>
+
+            </span>
+
+            <button class="btn btn-primary" ng-click="addBookmark(newBookmark, addForm)">Add Bookmark</button>
+
+        </div>
+    </form>
+
+</div >

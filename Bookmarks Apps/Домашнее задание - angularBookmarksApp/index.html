@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="bookmarksApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular bookmarks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css"/>
+    <link href="public/css/colorpicker.css" rel="stylesheet">
+    <script src="public/lib/jquery-2.0.3.min.js"></script>
+    <script src="public/lib/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.js"></script>
+    <script src="public/lib/angular-sanitize.js"></script>
+    <script src="public/lib/bootstrap-colorpicker-module.js"></script>
+    <script src="public/lib/angular-route.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/indexCtrl.js"></script>
+    <script src="app/controllers/addFormCtrl.js"></script>
+    <script src="app/controllers/addTagCtrl.js"></script>
+    <script src="app/controllers/bookmarksListCtrl.js"></script>
+    <script src="app/filters/httpFilter.js"></script>
+    <script src="app/directives/displayTag.js"></script>
+    <script src="app/services/dataService.js"></script>
+
+
+</head>
+<body ng-controller="indexCtrl">
+<div class="wrap">
+    <div class="page-header">
+        <h1>Angular bookmarks</h1>
+    </div>
+    <ul class="nav nav-tabs">
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/add">Add Bookmark</a></li>
+        <li><a href="#/list">Bookmark List</a></li>
+        <li><a href="#/tags">Tags</a></li>
+    </ul>
+
+    <ng-view></ng-view>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<div ng-controller="addTagCtrl">
+    <h2><span class="glyphicon glyphicon-floppy-save"></span> Add Tag</h2>
+
+    <form class="navbar navbar-form" role="form">
+                <input type="text" class="form-control" id="inputTagName" placeholder="Tag" ng-model="tag.name">
+                <input colorpicker type="text" class="form-control"  placeholder="Color: #04aa05" ng-model="tag.color">
+                <button type="submit" class="btn btn-success" ng-click="addTag(tag)">Add Tag</button>
+    </form>
+
+    <ul class="list-inline">
+        <li ng-repeat="tag in tags">
+            <span class="label" style="background-color:{{tag.color}};">{{tag.name}} </span>
+        </li>
+    </ul>
+
+
+</div>
