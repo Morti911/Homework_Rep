@@ -1,0 +1,274 @@
+body {
+  text-align: center;
+  padding: 0px 30px 120px;
+  line-height: 1.3;
+}
+p {
+  width: 70%;
+  margin: 20px auto;
+}
+input {
+  padding: 30px;
+  margin: 10px;
+  width: 80%;
+  font-size: 3em;
+  text-align: center;
+}
+.wi {
+  font-size: 12em;
+  line-height: 1.15;
+}
+.icon {
+  padding: 20px;
+  color: white;
+}
+.card {
+  width: 450px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 3px;
+}
+.key span {
+  padding: 10px;
+  border-radius: 3px;
+}
+.info {
+  width: 100%;
+}
+.cool {
+  background: #BAE8E7;
+}
+.mid {
+  background: #FCCA55;
+}
+.hot {
+  background: #FF3D5A;
+}
+.error {
+  color: red;
+}
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+::-webkit-input-placeholder,
+::-moz-placeholder {
+  color: rgba(155, 154, 155, 0.29);
+}
+
+h1, h2, h3, h4, span, p {
+  font-family: Helvetica Neue;
+}
+h1{
+  color: rgba(48, 64, 72, 0.82);
+}
+
+
+.spinner {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+.spinner .ball {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation: motion 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  animation: motion 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+p {
+  color: #fff;
+  margin-top: 5px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+@-webkit-keyframes motion {
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+  }
+  25% {
+    -webkit-transform: translateX(-50px) scale(0.3);
+    transform: translateX(-50px) scale(0.3);
+  }
+  50% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+  }
+  75% {
+    -webkit-transform: translateX(50px) scale(0.3);
+    transform: translateX(50px) scale(0.3);
+  }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes motion {
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+  }
+  25% {
+    -webkit-transform: translateX(-50px) scale(0.3);
+    transform: translateX(-50px) scale(0.3);
+  }
+  50% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+  }
+  75% {
+    -webkit-transform: translateX(50px) scale(0.3);
+    transform: translateX(50px) scale(0.3);
+  }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+  }
+}
+i {
+  display: block;
+}
+
+body {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Caine-pe-soasea_resize_%285319065915%29.jpg");
+  background-size: cover;
+}
+
+.card {
+  background:rgba(16, 36, 47, 0.94);
+  width: 560px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+.card div {
+  padding: 15px;
+}
+.card .location {
+  background: rgba(255, 255, 255, 0.48);
+}
+.card .location h2 {
+  font-weight: 500;
+  color: #717171;
+  display: inline-block;
+  margin: 0;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.card .location input {
+  border: none;
+  background: rgba(255, 255, 255, 0.58);
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-block;
+  height: 25px;
+  width: 150px;
+  margin: 0;
+  appearance: none;
+  padding: 5px;
+  vertical-align: middle;
+}
+.card .location button {
+  appearance: none;
+  background: #FF8787;
+  margin: 0;
+  margin-left: -5px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: bottom;
+  border: 0;
+  padding: 0;
+}
+.card .today {
+  color: #fff;
+}
+.card .today .detail {
+  width: 100%;
+}
+.card .today .detail aside {
+  width: 154px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.card .today .detail aside h3 {
+  display: inline;
+  font-weight: 300;
+}
+.card .today .detail aside.humid {
+  text-align: center;
+}
+.card .today .detail aside.low {
+  text-align: right;
+}
+.card .today .main {
+  text-align: center;
+  padding: 0;
+}
+.card .today .main h1 {
+  color: #fff;
+  display: inline;
+  font-size: 90px;
+  font-weight: 400;
+}
+.card .today .main .text-detail {
+  text-align: left;
+}
+.card .today .main .text-detail p {
+  margin-top: 0;
+  line-height: 25px;
+  font-size: 40px;
+  margin-left: 141px;
+}
+.card .future {
+  background: #71D7FF;
+  width: 500px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.card .future .day {
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.43);
+  height: 180px;
+  width: 33.3333333%;
+  border: 1px solid white;
+  display: block;
+  float: left;
+  margin: 0;
+}
+.card .future .day h4 {
+  margin: 0 0 15px 0;
+}
+.card .future .day .high, .card .future .day .low {
+  width: 48%;
+  display: inline-block;
+}
+.card .future .day .high h3, .card .future .day .low h3 {
+  font-size: 14px;
+  margin-top: 0;
+}
+.card .future .clear-fix {
+  float: none;
+  clear: both;
+  padding: 0;
+}
