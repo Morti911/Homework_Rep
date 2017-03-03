@@ -1,0 +1,147 @@
+{
+   "errMsg1": {
+      "message": "Напишите что-нибудь"
+   },
+   "errMsg2": {
+      "message": "Это канал уже в вашем списке"
+   },
+   "errMsg3": {
+      "message": "Аккаунт недействительный"
+   },
+   "errMsg4": {
+      "message": "На канале нет ни одного видео"
+   },
+   "errMsg5": {
+      "message": "Ошибка"
+   },
+   "errMsg6": {
+      "message": "Изменения успешно сохранены"
+   },
+   "errMsg7": {
+      "message": "Вы не можете использовать отрицательные значения, сохранено значение по умолчанию 10"
+   },
+   "errMsg8": {
+      "message": "Кэш удален"
+   },
+   "extDescription": {
+      "description": "Описание расширения",
+      "message": "Быстрый доступ к любимым видео"
+   },
+   "extname": {
+      "description": "Имя расширения",
+      "message": "YouTube Feed Ext"
+   },
+   "extPopupTooltip": {
+      "description": "Описание в popup",
+      "message": "YouTube Feed Ext"
+   },
+   "lang": {
+      "message": "рус"
+   },
+   "newTxt": {
+      "message": "NEW"
+   },
+
+   "optionsHeaderTitle": {
+      "message": "Настройки"
+   },
+   "opts1": {
+      "message": "Добавить канал"
+   },
+   "opts2": {
+      "message": "Показывать уведомленя"
+   },
+   "opts3": {
+      "message": "Воспроизведение звуковой сигнал, при добавлении новых видео"
+   },
+   "opts4": {
+      "message": "Проверка новых видео каждые"
+   },
+   "opts4b": {
+      "message": "минута (ы)"
+   },
+   "opts5": {
+      "message": "Загрузить"
+   },
+   "opts6": {
+      "message": "Размер кэша"
+   },
+   "optsHeader1": {
+      "message": "Каналы на которые вы подписаы"
+   },
+   "optsbtn1": {
+      "message": "Добавить"
+   },
+   "optsbtn2": {
+      "message": "Сохранить изменения"
+   },
+   "optsbtn3": {
+      "message": "Удалить"
+   },
+   "optsbtn4": {
+      "message": "Очистить кэш"
+   },
+   "optsbtn5": {
+      "message": "Скачать настройки"
+   },
+   "optsFooter": {
+      "message": "Новое"
+   },
+   "optsFooter2": {
+      "message": "Настройки"
+   },
+   "popupE1_B": {
+      "message": "Эта учетная запись не имеет видео"
+   },
+   "popupE1_H": {
+      "message": "Неизвестная ошибка"
+   },
+   "popupE2_B": {
+      "message": "Неизвестная ошибка"
+   },
+   "popupE2_H": {
+      "message": "Не удалось загрузить видео"
+   },
+   "popupE3_B": {
+      "message": "Тем не менее вы можете смотреть видео, нажав на канал в правой панели"
+   },
+   "popupE3_H": {
+      "message": "Нет новых видео"
+   },
+   "popuph2": {
+      "message": "Новое видео"
+   },
+   "popupMsg1": {
+      "message": "Проверка видео"
+   },
+   "popup_tooltip": {
+      "message": "Видео загружено $NAME$",
+      "placeholders": {
+         "name": {
+            "content": "$ 1",
+            "example": "Loftblog"
+         }
+      }
+   },
+   "contextMenu": {
+      "message": "Отметить как просмотреное"
+   },
+   "uploadedBy": {
+      "message": "Источник:"
+   },
+   "contextMenuMsg": {
+      "message": "Вы уже видели это видео"
+   },
+   "ytModBtnAddTxt": {
+      "message": "Добавить в Youtube Feed Ext"
+   },
+   "ytModBtnAddedTxt": {
+      "message": "Канал добавлен в Youtube Feed Ext "
+   },
+   "ytModBtnAddingTxt": {
+      "message": "Добавление канала"
+   },
+   "ytModErrMsg": {
+      "message": "Вы не можете добавить этот канал  сейчас."
+   }
+}

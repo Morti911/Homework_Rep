@@ -1,0 +1,55 @@
+{
+	"manifest_version": 2,
+	"author": "Viktor M",
+	"name": "__MSG_extName__",
+	"short_name": "__MSG_extName__",
+	"description": "__MSG_extDescription__",
+	"version": "0.1",
+	"minimum_chrome_version": "32.0",
+	"background": {
+		"page": "background.html"
+	},
+	"options_page": "options.html",
+	"icons": {
+		"128": "images//icon128.png",
+		"48": "images//icon48.png",
+		"16": "images//icon16.png"
+	},
+	"permissions": [
+		"tabs",
+		"storage",
+		"notifications",
+		"http://*.youtube.com/*",
+		"https://*.youtube.com/*",
+		"unlimitedStorage",
+		"contextMenus",
+		"webNavigation"
+	],
+	"browser_action": {
+		"default_icon": {
+			"19": "images//icon19.png",
+			"38": "images//icon38.png"
+		},
+		"default_title": "__MSG_extPopupTooltip__",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+
+		{
+			"matches": [
+				"https://www.youtube.com/watch?v=*",
+				"http://www.youtube.com/watch?v=*",
+				"https://www.youtube.com/user/*",
+				"http://www.youtube.com/user/*",
+				"https://www.youtube.com/channel/*",
+				"http://www.youtube.com/channel/*"
+			],
+			"css": ["css/youtubeMod.css"],
+			"js": [
+				"js/youtubeMod.js"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"default_locale": "ru"
+}

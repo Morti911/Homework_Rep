@@ -1,0 +1,171 @@
+{
+   "errMsg1": {
+      "message": "You have to write something..."
+   },
+   "errMsg2": {
+      "message": "That Youtuber is already in your list..."
+   },
+   "errMsg3": {
+      "message": "Invalid account..."
+   },
+   "errMsg4": {
+      "message": "That Youtuber has no videos..."
+   },
+   "errMsg5": {
+      "message": "An unknown error has happened..."
+   },
+   "errMsg6": {
+      "message": "Your changes have been successfully saved"
+   },
+   "errMsg7": {
+      "message": "You can't put decimals in option 3 The default value of 10 was saved"
+   },
+   "errMsg8": {
+      "message": "Cache deleted"
+   },
+   "extDescription": {
+      "description": "The extension description",
+      "message": "Never miss another video of your favorite Youtubers"
+   },
+   "extName": {
+      "description": "The extension name",
+      "message": "My Youtube"
+   },
+   "extPopupTooltip": {
+      "description": "The tooltip title of the popup",
+      "message": "My Youtube"
+   },
+   "lang": {
+      "message": "en"
+   },
+   "newTxt": {
+      "message": "NEW"
+   },
+
+   "optionsHeaderTitle": {
+      "message": "My Youtube Options"
+   },
+   "opts1": {
+      "message": "Add Youtuber"
+   },
+   "opts2": {
+      "message": "Show notification"
+   },
+   "opts3": {
+      "message": "Play alarm sound when new videos are found"
+   },
+   "opts4": {
+      "message": "Check for new videos every"
+   },
+   "opts4b": {
+      "message": "minute(s)"
+   },
+   "opts5": {
+      "message": "Load settings"
+   },
+   "opts6": {
+      "message": "Space used:"
+   },
+   "optsFooter": {
+      "message": "What's new?"
+   },
+   "optsFooter2": {
+      "message": "Options"
+   },
+   "optsHeader1": {
+      "message": "Youtubers you're following:"
+   },
+   "optsbtn1": {
+      "message": "Add"
+   },
+   "optsbtn2": {
+      "message": "Save changes"
+   },
+   "optsbtn3": {
+      "message": "Delete"
+   },
+   "optsbtn4": {
+      "message": "Clean cache"
+   },
+   "optsbtn5": {
+      "message": "Download settings"
+   },
+   "popupE1_B": {
+      "message": "This account has no videos"
+   },
+   "popupE1_H": {
+      "message": "An unknown error has happened"
+   },
+   "popupE2_B": {
+      "message": "An unknown error has happened"
+   },
+   "popupE2_H": {
+      "message": "Could not load any videos"
+   },
+   "popupE3_B": {
+      "message": "You can still watch videos by clicking on any account on right hand side"
+   },
+   "popupE3_H": {
+      "message": "There are no new videos"
+   },
+   "popuph2": {
+      "message": "New Videos"
+   },
+   "popupMsg1": {
+      "message": "Checking videos from: "
+   },
+   "popup_tooltip": {
+      "message": "Video uploaded by $NAME$",
+      "placeholders": {
+         "name": {
+            "content": "$1",
+            "example": "PMVTutoriales"
+         }
+      }
+   },
+   "thx1": {
+      "message": "Thanks for using My YouTube!"
+   },
+   "thx2": {
+      "message": "Don't forget to..."
+   },
+   "thx3": {
+      "message": "Rate 5 starts"
+   },
+   "thx4": {
+      "message": "Subscribe"
+   },
+   "thx5": {
+      "message": "Like & Follow"
+   },
+   "thx0b": {
+      "message": "On the Apps Gallery"
+   },
+   "thx1b": {
+      "message": "To my Youtube Channel (it's in Spanish :/)"
+   },
+   "thx2b": {
+      "message": "Share this extension with your friends on Facebook :)"
+   },
+    "contextMenu": {
+      "message": "Mark video as watched"
+   },
+   "uploadedBy": {
+      "message": "Uploaded by:"
+   },
+   "contextMenuMsg": {
+      "message": "You've already watched this video "
+   },
+   "YtModBtnAddTxt": {
+      "message": "Add to My YouTube™"
+   },
+   "YtModBtnAddedTxt": {
+      "message": "Youtuber added to My YouTube™"
+   },
+   "YtModBtnAddingTxt": {
+      "message": "Adding Youtuber"
+   },
+   "YtModErrMsg": {
+      "message": "You can not add to this Youtuber right now. Try later again"
+   }
+}

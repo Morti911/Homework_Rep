@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title data-message="optionsHeaderTitle"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/options.css">
+</head>
+<body>
+<div class="container">
+    <div id="header">
+    </div>
+    <div id="optionsMenu">
+        <div class="modal" style="display:none">
+            <div><span></span><span style="font-weight: bolder" data-message="YtModbtnAddingTxt"></span></div>
+        </div>
+
+        <div class="hbox">
+            <div class="groupbox flex1">
+                <div id="prefs">
+                  
+                    <div>
+                        <span data-message="opts4"></span>
+                        <input type="number" class="pref" min="1">
+                        <span data-message="opts4b"></span>
+                    </div>
+                    <div id="upConfig">
+                    </div>
+                </div>
+            </div>
+            <div class="groupbox flex1">
+
+                <div class="groupbox">
+                    <h2 data-message="optsHeader1"></h2>
+                    <div id="youtubers">
+                        <table cellpadding="3" cellspacing="1"></table>
+                        <table cellpadding="3" cellspacing="1"></table>
+                        <table cellpadding="3" cellspacing="1"></table>
+                    </div>
+                    <div style="clear:both;padding-top:1em;">
+                        <button id="btn-del" disabled data-message="optsbtn3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div >
+        <button id="btn-save" disabled data-message="optsbtn2"></button>
+        <span id="response"></span>
+    </div>
+</div>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/content.js" type="text/javascript"></script>
+<script src="js/options.js" type="text/javascript"></script>
+</body>
+</html>
